@@ -3,8 +3,12 @@ require 'segment_rails'
 
 class TestSegmentRails < Minitest::Test
   class FakeApp
+
     include SegmentRails
-    set_user_identifier ->() { 1 }
+
+    def user_identifier
+      1
+    end
     def cookies
       @cookies ||= {}
     end

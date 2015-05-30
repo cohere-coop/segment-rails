@@ -23,7 +23,8 @@ with Segment. Mmmm, now we get the lovely referring domain and utm data!
   ```
   class ApplicationController < ActionController::Base
     include SegmentRails
-    set_user_identifier ->() do
+
+    def user_identifier
       current_user ? current_user.id : nil
     end
   end

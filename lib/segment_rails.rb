@@ -7,22 +7,8 @@ module SegmentRails
     end
   end
 
-  module ClassMethods
-    def set_user_identifier(callback)
-      @user_identifier = callback
-    end
-
-    def user_identifier
-      @user_identifier ? @user_identifier.call() : nil
-    end
-  end
-
-  def self.included(klazz)
-    klazz.extend(ClassMethods)
-  end
-
   def user_identifier
-    self.class.user_identifier
+    nil
   end
 
   def track_event(event_name, properties={})
