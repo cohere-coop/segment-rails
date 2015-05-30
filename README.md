@@ -18,9 +18,10 @@ with Segment. Mmmm, now we get the lovely referring domain and utm data!
 
 ## Installation + Usage
 
-1. Add `segment-rails` to your Gemfile
-2. Instrument your controllers with `track("Timmy fell down the
+1. Add `segment_rails` to your Gemfile
+2. Add `include SegmentRails` to your `ApplicationController`
+3. Instrument your controllers with `track_event("Timmy fell down the
 well", { reporter: :lassie })`
-3. Profit! (Or at least, observe behaviors which you hope will lead to profit)
+4. Profit! (Or at least, observe behaviors which you hope will lead to profit)
 
 
