@@ -18,8 +18,8 @@ with Segment. Mmmm, now we get the lovely referring domain and utm data!
 
 ## Installation + Usage
 
-1. Add `segment_rails` to your Gemfile
-2. Configure `segment_rails` in your `ApplicationController`
+1. Add `segment-rails` to your Gemfile
+2. Configure `segment-rails` in your `ApplicationController`
   ```
   class ApplicationController < ActionController::Base
     include SegmentRails
