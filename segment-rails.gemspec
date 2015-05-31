@@ -1,17 +1,17 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'segment_rails/version'
+require 'segment-rails/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "segment_rails"
+  spec.name          = "segment-rails"
   spec.version       = SegmentRails::VERSION
   spec.authors       = ["Zee Spencer"]
   spec.email         = ["zee@zeespencer.com"]
 
   spec.summary       = %q{Preserve your meta-data! Track analytics on the front end!}
   spec.description   = %q{Preserve your meta-data! Track analytics on the front end!}
-  spec.homepage      = "https://github.com/zincmade/segment_rails"
+  spec.homepage      = "https://github.com/zincmade/segment-rails"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or

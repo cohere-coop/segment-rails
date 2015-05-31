@@ -1,5 +1,5 @@
 require_relative 'minitest_helper'
-require 'segment_rails'
+require 'segment-rails'
 
 class TestSegmentRails < Minitest::Test
   class FakeApp
